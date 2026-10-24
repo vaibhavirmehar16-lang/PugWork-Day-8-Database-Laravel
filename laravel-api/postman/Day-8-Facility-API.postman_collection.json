@@ -1,0 +1,35 @@
+{
+  "info": {
+    "name": "Day 8 Facility Management API",
+    "description": "Basic CRUD request collection. Set baseUrl to http://127.0.0.1:8000/api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [{"key": "baseUrl", "value": "http://127.0.0.1:8000/api"}],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {"method": "GET", "url": "{{baseUrl}}/health"}
+    },
+    {
+      "name": "List Facilities",
+      "request": {"method": "GET", "url": "{{baseUrl}}/facilities"}
+    },
+    {
+      "name": "Create Facility",
+      "request": {
+        "method": "POST",
+        "header": [{"key": "Content-Type", "value": "application/json"}, {"key": "Accept", "value": "application/json"}],
+        "body": {"mode": "raw", "raw": "{\"name\":\"Central Library\",\"location\":\"Central Zone\",\"cleanliness_score\":8.5,\"status\":\"active\"}"},
+        "url": "{{baseUrl}}/facilities"
+      }
+    },
+    {
+      "name": "List Inspections",
+      "request": {"method": "GET", "url": "{{baseUrl}}/inspections"}
+    },
+    {
+      "name": "List Complaints",
+      "request": {"method": "GET", "url": "{{baseUrl}}/complaints"}
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "project": "Day 8 \u2014 Database + Laravel",
+  "generated_on": "2026-10-23",
+  "file_count": 32,
+  "notes": [
+    "Laravel source overlay; Laravel framework/vendor dependencies are not bundled.",
+    "Use either SQL schema or Laravel migrations for a database, not both.",
+    "Run and verify locally before claiming the API is deployed/tested."
+  ]
+}
